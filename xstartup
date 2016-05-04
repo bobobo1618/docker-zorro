@@ -1,0 +1,6 @@
+#!/bin/sh
+rm /root/.wine/drive_c/Program\ Files\ \(x86\)/MetaTrader\ 4/MQL4/Experts/Zorro.ex4
+unzip -d /root/.wine/drive_c/Program\ Files\ \(x86\)/MetaTrader\ 4/MQL4/ /opt/zorro/ZorroMT4.zip
+wine /root/.wine/drive_c/Program\ Files\ \(x86\)/MetaTrader\ 4/terminal.exe &
+wine /opt/zorro/Zorro.exe &
+exec openbox-session
